@@ -1,0 +1,98 @@
+html {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+    min-height: 100vh;
+    background: linear-gradient(to right, rgba(0, 4, 255, 0.541) 30%, rgba(8, 99, 84, 0.5));
+}
+
+img {
+    max-width: 200px;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 2rem 0;
+}
+
+.Correo {
+    width: 60vw;
+    margin: auto;
+    background-color: #fff;
+    margin-top: 2rem;
+}
+
+.Correo-header {
+    background-image: linear-gradient(to right, rgba(173, 14, 46, 0.911) 50%, rgba(255, 0, 50, .9));
+    color: white;
+    text-align: center;
+    padding: .5rem 0;
+    font-size: .75rem;
+}
+
+.Correo-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.Correo-form input,
+.Correo-form textarea {
+    display: block;
+    margin: .75rem 0;
+    width: 100%;
+    padding: .5rem;
+}
+
+.Correo-btn {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Correo-btn button {
+    display: block;
+    padding: .75rem 1rem;
+    outline: 0;
+    color: white;
+    text-align: center;
+    border: 0;
+    background-color: rgba(173, 14, 46, 0.911);
+    text-transform: uppercase;
+    font-size: .75rem;
+    border-radius: .2rem;
+    cursor: pointer;
+}
+
+.Correo-btn button span {
+    margin-left: 7px;
+}
+
+.Correo-btn button[type="button"] {
+    background-color: rgb(23, 90, 145);
+}
+
+.Correo-loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button:disabled {
+    background-color: gray;
+}
+
+#loader {
+    display: none;
+}
